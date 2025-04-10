@@ -15,7 +15,7 @@ export default function About() {
           className="max-w-3xl mx-auto text-center"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
-            About WebForge
+            About Code War
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
             At WebForge, we&apos;re passionate about creating exceptional digital experiences that help businesses thrive in the modern web landscape. Our mission is to empower businesses with custom web solutions that not only look great but also drive real results.
