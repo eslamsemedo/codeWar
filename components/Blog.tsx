@@ -31,13 +31,13 @@ const blogPosts = [
 
 export default function Blog() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section id='blog' className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -55,7 +55,7 @@ export default function Blog() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: index * 0.2 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               className="bg-[#a7c7ee] p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
             >
               <post.icon className="h-12 w-12 text-blue-600 mb-4" />

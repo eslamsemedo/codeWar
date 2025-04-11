@@ -40,7 +40,7 @@ export default function Services() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -58,7 +58,7 @@ export default function Services() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: index * 0.2 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               className="bg-[#d3dfee] p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
             >
               <service.icon className="h-12 w-12 text-blue-600 mb-4" />

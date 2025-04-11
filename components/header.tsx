@@ -17,10 +17,26 @@ export default function Header() {
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex space-x-8 font-medium">
-            <li className="hover:text-[#2e507f] transition-all duration-200 cursor-pointer">Home</li>
-            <li className="hover:opacity-60 transition-all duration-200 cursor-pointer">About</li>
-            <li className="hover:opacity-60 transition-all duration-200 cursor-pointer">Blog</li>
-            <li className="hover:opacity-60 transition-all duration-200 cursor-pointer">Contact Us</li>
+            <li className="hover:text-[#2e507f] transition-all duration-200 cursor-pointer">
+              <a href='#' className=' decoration-none'>
+                Home
+              </a>
+            </li>
+            <li className="hover:text-[#2e507f] transition-all duration-200 cursor-pointer">
+              <a href='#about' className=' decoration-none'>
+                About
+              </a>
+            </li>
+            <li className="hover:text-[#2e507f] transition-all duration-200 cursor-pointer">
+              <a href='#blog' className=' decoration-none'>
+                Blog
+              </a>
+            </li>
+            <li className="hover:text-[#2e507f] transition-all duration-200 cursor-pointer">
+              <a href='#contact' className=' decoration-none'>
+                Contact Us
+              </a>
+            </li>
           </ul>
 
           {/* Mobile Menu Button */}
