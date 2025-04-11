@@ -10,11 +10,25 @@ export default function Contact() {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = async (e: React.FormEvent) => {
     // Handle form submission here
     // send to my email
-    console.log('Form submitted:', formData);
+    e.preventDefault();
+
+    console.log('Form data:', formData);
+
+    const res = await fetch('/api/send-email', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData),
+    });
+
+    const result = await res.json();
+    if (result.success) {
+      alert('Email sent!');
+    } else {
+      alert('Failed to send.');
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -86,7 +100,7 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 rows={4}
-                className="mt-1 px-[10px] py-0 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                className="mt-1 px-[10px] py-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
               />
             </div>
 

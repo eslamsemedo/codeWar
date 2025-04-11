@@ -11,7 +11,7 @@ export default function About() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="max-w-3xl mx-auto text-center"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
