@@ -59,7 +59,7 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: index * 0.2 }}
               viewport={{ once: false }}
-              className="bg-[#d3dfee] p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
+              className="bg-[#d3dfee] p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105"
             >
               <service.icon className="h-12 w-12 text-blue-600 mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
