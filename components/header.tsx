@@ -8,7 +8,7 @@ export default function header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className=" fixed w-full md:block z-50 p-1 top-1 font-sans col-span-full">
+    <div className=" fixed w-full md:block z-50 p-1 top-1 font-sans col-span-full">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between bg-gradient-to-r from-[#004AAD] to-[#4a7fb5]  shadow-xl p-3 rounded-xl h-14">
         <h1 className="text-xl font-bold text-gray-800">Logo</h1>
 
@@ -44,7 +44,7 @@ export default function header() {
           </ul>
         )}
       </div>
-    </header>
+    </div>
   );
 
 
