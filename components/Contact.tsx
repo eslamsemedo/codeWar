@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import Swal from 'sweetalert2';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -25,7 +26,11 @@ export default function Contact() {
 
     const result = await res.json();
     if (result.success) {
-      alert('Email sent!');
+      Swal.fire({
+        title: "Drag me!",
+        icon: "success",
+        draggable: true
+      });
     } else {
       alert('Failed to send.');
     }

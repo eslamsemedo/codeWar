@@ -56,7 +56,7 @@ export default function Blog() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
+              className="bg-[#a7c7ee] p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
             >
               <post.icon className="h-12 w-12 text-blue-600 mb-4" />
               <div className="text-sm text-gray-500 mb-2">{post.date}</div>

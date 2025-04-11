@@ -8,8 +8,8 @@ export default function Header() {
 
   return (
     <>
-      <div className=" fixed w-full md:block z-50 p-1 top-1 font-sans col-span-full">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between bg-gradient-to-r from-[#004AAD] to-[#3f72a5]  shadow-xl p-3 rounded-xl h-14">
+      <div className=" fixed w-full md:block z-50 p-3 md:p-1 top-1 font-sans col-span-full">
+        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between bg-gradient-to-r from-[#1068dc] to-[#78a4d1]  shadow-xl p-3 rounded-xl h-14">
           <h1 className="text-xl font-bold text-gray-800">
             <span className='text-[#7396c3]'>Code</span>
             <span>Wars</span>
@@ -17,10 +17,10 @@ export default function Header() {
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex space-x-8 font-medium">
-            <li className="hover:text-[#8592bb] cursor-pointer">Home</li>
-            <li className="hover:text-[#8592bb] cursor-pointer">About</li>
-            <li className="hover:text-[#8592bb] cursor-pointer">Blog</li>
-            <li className="hover:text-[#8592bb] cursor-pointer">Contact Us</li>
+            <li className="hover:text-[#2e507f] transition-all duration-200 cursor-pointer">Home</li>
+            <li className="hover:opacity-60 transition-all duration-200 cursor-pointer">About</li>
+            <li className="hover:opacity-60 transition-all duration-200 cursor-pointer">Blog</li>
+            <li className="hover:opacity-60 transition-all duration-200 cursor-pointer">Contact Us</li>
           </ul>
 
           {/* Mobile Menu Button */}
@@ -33,19 +33,35 @@ export default function Header() {
         </div>
 
         {/* Mobile Dropdown */}
-        <div
-          className={`md:hidden overflow-hidden transition-all duration-700 ease-in-out ${isOpen ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'
-            }`}
+        {/* <div
+          className={`md:hidden overflow-hidden transition-all duration-700 ease-in-out ${isOpen ? 'max-h-80 opacity-85' : 'max-h-0 opacity-0'}`}
         >
 
           {isOpen && (
-            <ul className="bg-white rounded-4xl flex flex-col items-center gap-4 py-4 font-medium">
-              <li className="text-blue-600 cursor-pointer ">Home</li>
-              <li className="text-blue-600 cursor-pointer">About</li>
-              <li className="text-blue-600 cursor-pointer">Blog</li>
-              <li className="text-blue-600 cursor-pointer">Contact Us</li>
+            <ul className="bg-[#dfeaf3] rounded-4xl flex flex-col items-center gap-4 py-4 font-medium">
+              <li className="text-blue-600 cursor-pointer p-4">Home</li>
+              <li className="text-blue-600 cursor-pointer p-4">About</li>
+              <li className="text-blue-600 cursor-pointer p-4">Blog</li>
+              <li className="text-blue-600 cursor-pointer p-4">Contact Us</li>
             </ul>
           )}
+        </div> */}
+
+
+        <div
+          className={`md:hidden mt-2 overflow-hidden transition-all duration-700 ease-in-out ${isOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'}`}
+        >
+          <ul
+            className={`
+      bg-gradient-to-r from-[#1068dc] to-[#78a4d1] rounded-xl flex flex-col items-center gap-4 py-4 font-medium transition-opacity duration-500
+      ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}
+    `}
+          >
+            <li className=" cursor-pointer p-4">Home</li>
+            <li className=" cursor-pointer p-4">About</li>
+            <li className=" cursor-pointer p-4">Blog</li>
+            <li className=" cursor-pointer p-4">Contact Us</li>
+          </ul>
         </div>
       </div>
     </>
