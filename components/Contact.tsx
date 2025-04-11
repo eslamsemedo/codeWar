@@ -27,12 +27,16 @@ export default function Contact() {
     const result = await res.json();
     if (result.success) {
       Swal.fire({
-        title: "Drag me!",
+        title: "email sent",
         icon: "success",
         draggable: true
       });
     } else {
-      alert('Failed to send.');
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong!",
+      });
     }
   };
 

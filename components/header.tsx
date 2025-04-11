@@ -73,10 +73,26 @@ export default function Header() {
       ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}
     `}
           >
-            <li className=" cursor-pointer p-4">Home</li>
-            <li className=" cursor-pointer p-4">About</li>
-            <li className=" cursor-pointer p-4">Blog</li>
-            <li className=" cursor-pointer p-4">Contact Us</li>
+            <li className=" cursor-pointer p-4">
+              <a href='#' onClick={() => setIsOpen(false)} className=' decoration-none'>
+                Home
+              </a>
+            </li>
+            <li className=" cursor-pointer p-4">
+              <a href='#about' onClick={() => setIsOpen(false)} className=' decoration-none'>
+                About
+              </a>
+            </li>
+            <li className=" cursor-pointer p-4">
+              <a href='#blog' onClick={() => setIsOpen(false)} className=' decoration-none'>
+                Blog
+              </a>
+            </li>
+            <li className=" cursor-pointer p-4">
+              <a href='#contact' onClick={() => setIsOpen(false)} className=' decoration-none'>
+                Contact Us
+              </a>
+            </li>
           </ul>
         </div>
       </div>
