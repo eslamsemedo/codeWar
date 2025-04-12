@@ -1,6 +1,6 @@
 "use client";
 import { motion } from 'framer-motion';
-import { ArrowBigRight, Save, SaveIcon, X } from 'lucide-react';
+import { ArrowBigRight } from 'lucide-react';
 import React from 'react'
 
 export default function projects() {
