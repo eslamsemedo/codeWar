@@ -6,7 +6,7 @@ export default function eye() {
       <style>
         {`
           .btn-container {
-            --pupil-color: rgb(156, 207, 255);
+            --pupil-color: rgb(59, 83, 108);
             --pupil-move: 20%;
             --sensor-height: 130dvmax;
             --sensor-width: calc(var(--sensor-height) * 82.84 / 100);
