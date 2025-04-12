@@ -51,6 +51,7 @@ export default function Services() {
           </p>
         </motion.div>
 
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <motion.div
@@ -59,7 +60,7 @@ export default function Services() {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: index * 0.2 }}
               viewport={{ once: false }}
-              className="bg-[#85b3df] p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
+              className="bg-[#85b3df] p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform"
             >
               <service.icon className="h-12 w-12 text-blue-600 mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -71,6 +72,7 @@ export default function Services() {
             </motion.div>
           ))}
         </div>
+
       </div>
     </section>
   );

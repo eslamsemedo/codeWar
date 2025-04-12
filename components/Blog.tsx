@@ -31,8 +31,8 @@ const blogPosts = [
 
 export default function Blog() {
   return (
-    <section id='blog' className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id='blog' className="py-20 bg-gray-50 ">
+      <div className="container mt-10 mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -56,7 +56,7 @@ export default function Blog() {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: index * 0.2 }}
               viewport={{ once: false }}
-              className="bg-[#85b3df] p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
+              className="bg-[#85b3df] p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform"
             >
               <post.icon className="h-12 w-12 text-blue-600 mb-4" />
               <div className="text-sm text-gray-500 mb-2">{post.date}</div>

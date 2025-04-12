@@ -71,7 +71,7 @@ export default function Header() {
         >
           <ul
             className={`
-      bg-gradient-to-r from-[#1068dc] to-[#78a4d1] rounded-xl flex flex-col items-center gap-4 py-4 font-medium transition-opacity duration-500
+      bg-gradient-to-r from-[#30465b] to-[#9CCFFF]   rounded-xl flex flex-col items-center gap-4 py-4 font-medium transition-opacity duration-500
       ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}
     `}
           >

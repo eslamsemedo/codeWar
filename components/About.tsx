@@ -5,14 +5,15 @@ import { motion } from 'framer-motion';
 
 export default function About() {
   return (
-    <section id='about' className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id='about' className=" bg-white flex pt-16 p-[15px] sm:p-10 md:p-14 lg:p-20 items-center justify-center md:justify-between gap-x-20">
+
+      <div className="md:w-[60%] w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: false }}
-          className="max-w-3xl mx-auto text-center"
+          className="text-center md:text-left mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
             About Code Wars
@@ -25,6 +26,15 @@ export default function About() {
           </p>
         </motion.div>
       </div>
+      <motion.div
+        initial={{ opacity: 0, x: 220 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: false }}
+        className='w-[40%] hidden md:block'
+      >
+        <img src="/bgabout.jpeg" alt="img" className='w-[100%] h-[500px] rounded-l-full' />
+      </motion.div>
     </section>
   );
 } 
