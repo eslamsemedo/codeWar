@@ -55,11 +55,11 @@ export default function Services() {
           {services.map((service, index) => (
             <motion.div
               key={service.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: index * 0.2 }}
               viewport={{ once: false }}
-              className="bg-[#d3dfee] p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105"
+              className="bg-[#85b3df] p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
             >
               <service.icon className="h-12 w-12 text-blue-600 mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">

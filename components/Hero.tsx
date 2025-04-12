@@ -7,7 +7,11 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 to-indigo-700 text-white overflow-hidden">
+    <section
+      className="relative h-screen w-screen flex items-center justify-center bg-cover bg-center bg-fixed  text-white overflow-hidden"
+      // className='sticky top-0 h-screen flex items-center justify-center bg-cover bg-center text-white overflow-hidden'
+      style={{ backgroundImage: "url('/bghero.jpeg')" }}
+    >
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
         <Eye />

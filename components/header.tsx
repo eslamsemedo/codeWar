@@ -9,11 +9,13 @@ export default function Header() {
   return (
     <>
       <div className=" fixed w-full md:block z-50 p-3 md:p-1 top-1 font-sans col-span-full">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between bg-gradient-to-r from-[#1068dc] to-[#78a4d1]  shadow-xl p-3 rounded-xl h-14">
+        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between bg-gradient-to-r from-[#30465b] to-[#9CCFFF]  shadow-xl p-3 rounded-xl h-14">
           <h1 className="text-xl font-bold text-gray-800">
             <span className='text-[#7396c3]'>Code</span>
             <span>Wars</span>
           </h1>
+
+
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex space-x-8 font-medium">

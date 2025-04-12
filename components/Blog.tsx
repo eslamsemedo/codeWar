@@ -48,15 +48,15 @@ export default function Blog() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {blogPosts.map((post, index) => (
             <motion.div
               key={post.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: index * 0.2 }}
               viewport={{ once: false }}
-              className="bg-[#a7c7ee] p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105"
+              className="bg-[#85b3df] p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
             >
               <post.icon className="h-12 w-12 text-blue-600 mb-4" />
               <div className="text-sm text-gray-500 mb-2">{post.date}</div>
