@@ -8,6 +8,7 @@ import Services from '../../components/Services';
 import Contact from '../../components/Contact';
 import Footer from '../../components/Footer';
 import Blog from '../../components/Blog';
+import Projects from '../../components/projects';
 // import Eye from '../../components/eye';
 
 export default function Home() {
@@ -17,9 +18,9 @@ export default function Home() {
       <About />
       <Services />
       <Blog />
+      <Projects />
       <Contact />
       <Footer />
-      {/* <Eye /> */}
     </main>
   );
 } 
