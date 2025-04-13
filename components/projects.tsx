@@ -34,6 +34,15 @@ export default function projects() {
 
     },
     {
+      title: 'Tech Website',
+      description: 'Innovative tech solutions we&apos;ve engineered to solve real-world problems.',
+      icon: "",
+      devolop: true,
+      url: "https://smart-leaders-yyv9745kw4cggqnj.builder-preview.com/",
+      haveLink: true
+
+    },
+    {
       title: 'Hot Air Balloon in Luxor',
       description: 'Experience the magic of Luxor from above with a breathtaking hot air balloon ride.',
       icon: "",
