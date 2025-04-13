@@ -73,7 +73,7 @@ export default function projects() {
                 {
                   project.devolop
                     ? <div className="w-[150px] h-[30px] bg-[#d57637] rounded-full flex items-center justify-center mt-5 mr-5">
-                      on devolopment
+                      on Development
                     </div>
                     : <div className="w-[150px] h-[30px] bg-[#00b140] rounded-full flex items-center justify-center mt-5 mr-5">
                       completed
