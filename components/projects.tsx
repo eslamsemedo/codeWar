@@ -11,27 +11,35 @@ export default function projects() {
       title: 'Ozone',
       description: 'Your all-in-one platform for workouts, nutrition, and fitness tracking.',
       icon: "",
-      devolop: true
+      devolop: true,
+      url: "https://ozone-blush.vercel.app/",
+      haveLink: true
     },
     {
       title: 'Clone of linkedin',
       description: 'A professional networking platform to connect, share, and grow your career.',
       icon: "",
-      devolop: true
+      devolop: true,
+      url: "https://linkedin-nextjs-puce.vercel.app/",
+      haveLink: true
 
     },
     {
       title: 'Smart leader',
       description: 'A space to connect, share ideas, and grow together as a community.',
       icon: "",
-      devolop: true
+      devolop: true,
+      url: "https://smart-leaders-yyv9745kw4cggqnj.builder-preview.com/",
+      haveLink: true
 
     },
     {
       title: 'Hot Air Balloon in Luxor',
       description: 'Experience the magic of Luxor from above with a breathtaking hot air balloon ride.',
       icon: "",
-      devolop: true
+      devolop: true,
+      url: "",
+      haveLink: false
 
     },
   ];
@@ -81,12 +89,15 @@ export default function projects() {
                   {project.description}
                 </p>
               </div>
-              <div className="mt-4 ml-2.5 w-[70%] px-3 py-2 bg-[#e3fff9] rounded-[10px] flex items-center">
-                <ArrowBigRight className="w-[15px] h-[15px] fill-[#0026b1]" />
-                <p className="ml-2 text-sm font-medium text-[#9198e5]">
-                  visit website
-                </p>
-              </div>
+              {
+                project.haveLink &&
+                <a href={project.url} target="_blank" className="mt-4 ml-2.5 w-[70%] px-3 py-2 bg-[#e3fff9] rounded-[10px] flex items-center hover:cursor-pointer hover:bg-[#d1f7ee] transition-all duration-200 ease-in-out">
+                  <ArrowBigRight className="w-[15px] h-[15px] fill-[#0026b1]" />
+                  <p className="ml-2 text-sm font-medium text-[#9198e5]">
+                    visit website
+                  </p>
+                </a>
+              }
             </div>
           ))
         }

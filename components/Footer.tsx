@@ -33,6 +33,7 @@ export default function Footer() {
                 whileHover={{ scale: 1.1 }}
                 href="https://www.facebook.com/share/18Vfcd44mv/?mibextid=wwXIfr"
                 className="text-gray-400 hover:text-white transition-colors duration-300"
+                target="_blank"
               >
                 Facebook
               </motion.a>
@@ -41,6 +42,7 @@ export default function Footer() {
                 whileHover={{ scale: 1.1 }}
                 href="https://www.instagram.com/codewars_x"
                 className="text-gray-400 hover:text-white transition-colors duration-300"
+                target="_blank"
               >
                 Instagram
               </motion.a>
