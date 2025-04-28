@@ -20,7 +20,7 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-400">
               <li>Hurghada, Egypt</li>
               <li>codewars89@gmail.com</li>
-              <li>+201099600120</li>
+              <li><a href='tel:+201099600120'>+201099600120</a></li>
               <li>+201003472237</li>
               <li>+201009425750</li>
             </ul>

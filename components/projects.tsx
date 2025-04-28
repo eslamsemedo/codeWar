@@ -38,7 +38,16 @@ export default function projects() {
       description: 'Innovative tech solutions we&apos;ve engineered to solve real-world problems.',
       icon: "",
       devolop: true,
-      url: "https://smart-leaders-yyv9745kw4cggqnj.builder-preview.com/",
+      url: "https://reyad2002.github.io/Tech-Website/",
+      haveLink: true
+
+    },
+    {
+      title: 'Food Blog',
+      description: 'Tasty recipes and cooking inspiration served daily.',
+      icon: "",
+      devolop: false,
+      url: "",
       haveLink: true
 
     },
@@ -72,12 +81,12 @@ export default function projects() {
         </motion.div>
       </div>
 
-      <div className='flex flex-wrap items-center justify-center gap-9 py-20'>
+      <div className=' grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6  py-20 px-24'>
 
         {
           projects.map((project, index) => (
 
-            <div key={index} className="w-[252px] h-[350px] bg-white rounded-[30px] shadow-[15px_15px_30px_#bebebe,-15px_-15px_30px_#ffffff] transition-all duration-200 ease-in-out hover:cursor-pointer hover:scale-110">
+            <div key={index} className="m-auto w-[252px] h-[350px] bg-white rounded-[30px] shadow-[15px_15px_30px_#bebebe,-15px_-15px_30px_#ffffff] transition-all duration-200 ease-in-out hover:cursor-pointer hover:scale-110">
               <div className="w-full h-1/2 rounded-t-[30px] bg-gradient-to-b from-[#3B536C] to-[#9198e5] flex justify-end items-start">
                 {
                   project.devolop
